@@ -18,7 +18,7 @@ public class messageController {
         msgService.saveMessage(msg);
         return new ResponseEntity<>(msg.toString(), HttpStatus.CREATED);
     }
-
+// this is a get api call
     @GetMapping("/getmsgbyid")
     public ResponseEntity<String> getMsgbyid(@RequestBody Integer id){
         msgService.findmsg(id);
